@@ -1,0 +1,28 @@
+.root {
+    -fx-background-color: #121212;
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+.title {
+    -fx-font-size: 24px;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+}
+
+.text-area {
+    -fx-control-inner-background: #1e1e1e;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #333;
+}
+
+.button {
+    -fx-background-color: #ff4c29;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-padding: 10px;
+}
+
+.result {
+    -fx-text-fill: #ffcc00;
+    -fx-font-size: 16px;
+}

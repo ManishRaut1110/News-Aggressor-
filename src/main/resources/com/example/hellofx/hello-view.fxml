@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.hellofx.MainController"
+      spacing="15" padding="20" styleClass="root">
+    <stylesheets>
+
+    </stylesheets>
+
+    <Label text="News Aggressor Detector" styleClass="title"/>
+    <TextArea fx:id="inputText" promptText="Enter news content here..." />
+    <Button text="Analyze Sentiment" onAction="#analyzeText"/>
+    <Label fx:id="resultLabel" text="Detected Sentiment will appear here." styleClass="result"/>
+</VBox>
+
