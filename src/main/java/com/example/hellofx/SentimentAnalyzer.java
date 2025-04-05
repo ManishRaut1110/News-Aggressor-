@@ -13,8 +13,14 @@ public class SentimentAnalyzer {
     public SentimentAnalyzer() {
         Properties props = new Properties();
         props.setProperty("annotators", "tokenize,ssplit,pos,parse,sentiment");
+    
+        // Load the POS model manually
+        String modelPath = getClass().getResource("/models/english-left3words-distsim.tagger").toString();
+        props.setProperty("pos.model", modelPath);
+    
         pipeline = new StanfordCoreNLP(props);
     }
+    
 
     public String analyzeSentiment(String text) {
         Annotation annotation = new Annotation(text);
